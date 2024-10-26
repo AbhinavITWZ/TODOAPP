@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: black;
+   
+    font-family: Arial, sans-serif;
+    
+}
+
+div.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* kabhi bhi overflow ko avoid karna  */
+
+.todo-cnt {
+    width: 400px;
+    background: linear-gradient(125deg, rgb(88, 180, 197), rgb(114, 67, 195));
+    border-radius: 20px;
+    box-shadow: -12px 4px 10px rgba(201, 190, 210, 0.39);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+   
+    
+}
+
+
+button#add-task {
+    padding: 10px;
+    border: none;
+    background-color: #6b5b95;
+    color: #00ffc3;
+    font-weight: bolder;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+button#add-task:hover {
+    background-color: #5a4a8e;
+}
+
+.task-list {
+    list-style: none;
+    max-height: 300px;
+    
+    padding: 0;
+}
+
+.task-list li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.task-list li:hover {
+    transform: scale(1.02);
+   
+    
+}
+
+.task-list .delete-btn {
+    background: #e74c3c;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-list .delete-btn:hover {
+    background: #c0392b;
+}
+.close-btn {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: red; /* Cross color */
+    font-size: 38px; /* Size of the cross */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.close-btn:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
